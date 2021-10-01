@@ -64,18 +64,17 @@ This ETL process works on Google Cloud with Cloud Storage and Cloud Functions. P
 
     Other Notes:
     
-    I think a lot of better ways to solve the problem, but for the challenge I think as easy as posible, because we could use a GCloud Composer for Scheduled and automatic trigger day by day,
-    but the result.csv file come from Kaggle platform and to do a download is needed a credentials.
+    I think a lot of better ways to solve the problem, but for the challenge I think as easy as posible, because we could use a GCloud Composer for Scheduled and automatic trigger day by day, but the result.csv file come from Kaggle platform and to do a download is needed a credentials.
 
-    Thinking in the data scientist the pipeline allow to add or modify the queries they could need to evaluate the same data in a diferent way. To test this function you only had to create a new query .sql into a queries folder.
-    But with more queries, more performace you need to configure into a Cloud Function and Dataproc Cluster parameters.
+    Thinking in the data scientist the pipeline allow to add or modify the queries they could need to evaluate the same data in a diferent way. To test this function you only had to create a new query .sql into a queries folder. But with more queries, more performace you need to configure into a Cloud Function and Dataproc Cluster parameters.
 
     In the same way, if you see the queries I add, one with a where based on date, to evaluate only the 2018 games.
 
-    And in other hand I think a lot how to rank the games if I have two diferent scores, the metascore and the users score. Then I think that I could evaluate both after normalization,
-    because of that users score is multiply by 10 and I set a weigth for each score, assigning 75% to metascore and 25% to users score. With this, I create a new column named custom_score.
+    And the other hand I think a lot how to rank the games if I have two diferent scores, the metascore and the users score. Then I think that I could evaluate both after normalization, because of that users score is multiply by 10 and I set a weigth for each score, assigning 75% to metascore and 25% to users score. With this, I create a new column named custom_score.
 
-    All of this parameter could easily change by the data scientist needs. 
+    All of this parameter could easily change by the data scientist needs.
+
+    The pipeline could have as an output a Bigquery Table for example. But for this challenge I decide to only export in a CSV to avoid more complex deployment process.
 
 
 
