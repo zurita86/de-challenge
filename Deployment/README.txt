@@ -2,7 +2,7 @@
 
 ## Deployment Steps
 
-This ETL process works on Google Cloud with Cloud Storage and Cloud Functions. Please follow the steps into a Google Cloud. For this, you could use a GCP SDK (if you had installed), Cloud Shell or a GCP User Interface.
+This ETL process works on Google Cloud with Cloud Storage, Cloud Functions and Cloud Dataproc. Please follow the steps into a Google Cloud. For this, you could use a GCP SDK (if you had installed), Cloud Shell or a GCP User Interface.
 
 1. Create a project before the deployment.
     -- Go to: https://console.cloud.google.com/
