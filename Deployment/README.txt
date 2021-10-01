@@ -76,6 +76,10 @@ This ETL process works on Google Cloud with Cloud Storage and Cloud Functions. P
 
     The pipeline could have as an output a Bigquery Table for example. But for this challenge I decide to only export in a CSV to avoid more complex deployment process.
 
+    Data Model
+    -------
+    For the Data Model I used Moon Modeler App on Mac OSX because basically I dont have any other installed and there no free options for Mac. Because of that I use a Trial period of this App.
+
 
 
 
